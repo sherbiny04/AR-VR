@@ -47,7 +47,7 @@ MonoBehaviour:
   lateLatchingDebug: 0
   optimizeMultiviewRenderRegions: 0
   m_multiviewRenderRegionsOptimizationMode: 0
-  m_hasMigratedMultiviewRenderRegions: 0
+  m_hasMigratedMultiviewRenderRegions: 1
   spacewarpMotionVectorTextureFormat: 0
 --- !u!114 &-8407530359712188540
 MonoBehaviour:
@@ -690,24 +690,24 @@ MonoBehaviour:
   m_Name: Android
   m_EditorClassIdentifier: 
   features:
-  - {fileID: 6639181590275363782}
-  - {fileID: -9086935799034910240}
-  - {fileID: -1516030098708913451}
-  - {fileID: -3239864920064839261}
-  - {fileID: -2097868681093786481}
   - {fileID: -66679893769703224}
+  - {fileID: -666836670503184063}
+  - {fileID: -2097868681093786481}
+  - {fileID: -6456154325353050669}
+  - {fileID: -7083309021862314717}
   - {fileID: 5340175498883454721}
   - {fileID: -2793732786108809173}
-  - {fileID: 8092759127889418930}
-  - {fileID: -7083309021862314717}
-  - {fileID: -4238061916265769290}
-  - {fileID: -666836670503184063}
-  - {fileID: -6456154325353050669}
   - {fileID: -7323199268373468457}
+  - {fileID: -9086935799034910240}
+  - {fileID: -4238061916265769290}
+  - {fileID: -3239864920064839261}
   - {fileID: -902491408774027849}
+  - {fileID: 6639181590275363782}
   - {fileID: -6665717370813679340}
   - {fileID: -4790022644912169281}
+  - {fileID: -1516030098708913451}
   - {fileID: -5168936146756471752}
+  - {fileID: 8092759127889418930}
   customLoaderName: 
   m_renderMode: 1
   m_latencyOptimization: 0
@@ -971,7 +971,7 @@ MonoBehaviour:
   m_symmetricProjection: 0
   m_optimizeMultiviewRenderRegions: 0
   m_multiviewRenderRegionsOptimizationMode: 0
-  m_hasMigratedMultiviewRenderRegionSetting: 0
+  m_hasMigratedMultiviewRenderRegionSetting: 1
   m_foveatedRenderingApi: 0
   m_useOpenXRPredictedTime: 0
 --- !u!114 &8092759127889418930
@@ -1009,25 +1009,25 @@ MonoBehaviour:
   m_Name: Standalone
   m_EditorClassIdentifier: 
   features:
-  - {fileID: -8082544772497967463}
-  - {fileID: -819364050702629876}
+  - {fileID: 5817184103660646232}
   - {fileID: -356038439017870016}
+  - {fileID: 5297073171371640448}
+  - {fileID: -300542598906274910}
   - {fileID: 4058296771836732017}
   - {fileID: 6337520776850270313}
-  - {fileID: 2071136970170382460}
   - {fileID: -8407530359712188540}
-  - {fileID: -300542598906274910}
-  - {fileID: 3352262743949075415}
-  - {fileID: 5817184103660646232}
-  - {fileID: 5297073171371640448}
   - {fileID: -7521255725253505373}
   - {fileID: 1004081526821465367}
+  - {fileID: 3352262743949075415}
+  - {fileID: -819364050702629876}
   - {fileID: -4557336726714082150}
   - {fileID: -953794625461468114}
   - {fileID: 2274516352648383867}
   - {fileID: 3811960920331612425}
+  - {fileID: -8082544772497967463}
   - {fileID: 1444382964793856977}
   - {fileID: -1973245170161006786}
+  - {fileID: 2071136970170382460}
   customLoaderName: 
   m_renderMode: 1
   m_latencyOptimization: 0

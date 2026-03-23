@@ -1,14 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.XR.Interaction.Toolkit;
+
 
 public class SocketObject : MonoBehaviour
 {
 
-    public XRSocketInteractor socket1;
-    public XRSocketInteractor socket2;
-    public XRSocketInteractor socket3;
+    public UnityEngine.XR.Interaction.Toolkit.Interactors.XRSocketInteractor socket1;
+    public UnityEngine.XR.Interaction.Toolkit.Interactors.XRSocketInteractor socket2;
+    public UnityEngine.XR.Interaction.Toolkit.Interactors.XRSocketInteractor socket3;
 
     public Animator coffinAnimator;
     public AudioSource coffinAudio;
@@ -22,9 +22,9 @@ public class SocketObject : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        IXRSelectInteractable object1 = socket1.GetOldestInteractableSelected();
-        IXRSelectInteractable object2 = socket2.GetOldestInteractableSelected();
-        IXRSelectInteractable object3 = socket3.GetOldestInteractableSelected();
+        UnityEngine.XR.Interaction.Toolkit.Interactables.IXRSelectInteractable object1 = socket1.GetOldestInteractableSelected();
+        UnityEngine.XR.Interaction.Toolkit.Interactables.IXRSelectInteractable object2 = socket2.GetOldestInteractableSelected();
+        UnityEngine.XR.Interaction.Toolkit.Interactables.IXRSelectInteractable object3 = socket3.GetOldestInteractableSelected();
 
         if (object1 != null && object2 != null && object3 != null)
         {
