@@ -14,17 +14,16 @@ public class SocketObject : MonoBehaviour
     public AudioSource coffinAudio;
 
     bool isCoffinOpen = false;
-    
+
     void Start()
     {
     }
 
-    
     void Update()
     {
-        UnityEngine.XR.Interaction.Toolkit.Interactables.IXRSelectInteractable object1 = socket1.GetOldestInteractableSelected();
-        UnityEngine.XR.Interaction.Toolkit.Interactables.IXRSelectInteractable object2 = socket2.GetOldestInteractableSelected();
-        UnityEngine.XR.Interaction.Toolkit.Interactables.IXRSelectInteractable object3 = socket3.GetOldestInteractableSelected();
+        UnityEngine.XR.Interaction.Toolkit.Interactables.IXRSelectInteractable object1 = socket1.hasSelection ? socket1.firstInteractableSelected : null;
+        UnityEngine.XR.Interaction.Toolkit.Interactables.IXRSelectInteractable object2 = socket2.hasSelection ? socket2.firstInteractableSelected : null;
+        UnityEngine.XR.Interaction.Toolkit.Interactables.IXRSelectInteractable object3 = socket3.hasSelection ? socket3.firstInteractableSelected : null;
 
         if (object1 != null && object2 != null && object3 != null)
         {

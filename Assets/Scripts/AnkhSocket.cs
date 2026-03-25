@@ -18,19 +18,20 @@ public class AnkhSocket : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        UnityEngine.XR.Interaction.Toolkit.Interactables.IXRSelectInteractable object1 = socket.GetOldestInteractableSelected();
-
-        if (object1 != null)
+        if (socket.hasSelection)
         {
-            if (object1.transform.name == "Ankh")
+            UnityEngine.XR.Interaction.Toolkit.Interactables.IXRSelectInteractable object1 = socket.firstInteractableSelected;
+            if (object1 != null)
             {
-                if (!isTreasureOpen)
+                if (object1.transform.name == "Ankh")
                 {
-                    treasureAnimator.SetTrigger("OpenTreasure");
-                    isTreasureOpen = true;
+                    if (!isTreasureOpen)
+                    {
+                        treasureAnimator.SetTrigger("OpenTreasure");
+                        isTreasureOpen = true;
+                    }
                 }
             }
-
         }
     }
 }
